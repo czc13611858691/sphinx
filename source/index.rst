@@ -10,3 +10,6 @@
    :maxdepth: 2
    
    document/sphinx.rst
+   document/小说
+   document/beyond配置
+   document/vscode配置
