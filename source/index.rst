@@ -13,3 +13,4 @@
    document/小说
    document/beyond配置
    document/vscode配置
+   document/vscode_openocd_stm32调试

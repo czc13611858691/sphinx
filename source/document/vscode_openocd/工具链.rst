@@ -1,0 +1,10 @@
+工具链
+*********************************************
+
+- 编译器 ``gcc-arm-none-eabi-10.3-2021.10-win32.exe``
+- 工程生成软件 ``SetupSTM32CubeMX-6.9.1-Win.exe``
+- openocd调试下载工具 ``openocd-20211118.7z``
+- vscode插件 ``cortex-debug``
+
+
+参考工程 👉 `github stm32f103_example <https://github.com/czc13611858691/stm32f103_example>`_ 
