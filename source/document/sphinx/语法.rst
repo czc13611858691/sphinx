@@ -59,3 +59,18 @@
     |
 
 参考文章 `👉 <https://cloud.tencent.com/developer/ask/sof/114318>`_ 
+
+
+嵌入文件
+*****************************
+
+
+.. code-block:: rst
+
+    .. literalinclude:: media/settings.json
+        :language: json
+
+settings.json
+
+.. literalinclude:: media/settings.json
+    :language: json
