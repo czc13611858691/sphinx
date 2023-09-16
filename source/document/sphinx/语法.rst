@@ -1,0 +1,48 @@
+语法
+#################
+
+官方文档教程 `-->点击 <https://www.sphinx-doc.org/zh_CN/master/usage/restructuredtext/basics.html>`_ 
+
+标题
+***************
+
+.. code-block:: rst
+
+    Section Title
+    ###############
+
+    Section Title
+    ***************
+
+    Section Title
+    ===============
+
+    Section Title
+    ----------------
+
+    Section Title
+    .............
+
+    Section Title
+    ~~~~~~~~~~~~~
+
+文档标题增加序号
+*************************************
+
+.. code-block:: rst
+    
+    .. toctree::
+        :numbered:
+
+
+图片
+********************************
+
+.. code-block:: rst
+
+    .. image:: path
+        :align: center
+        :align: right
+        :align: left
+        :width: xx px
+        :height: xx px
