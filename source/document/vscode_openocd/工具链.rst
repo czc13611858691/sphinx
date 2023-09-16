@@ -6,5 +6,3 @@
 - openocd调试下载工具 ``openocd-20211118.7z``
 - vscode插件 ``cortex-debug``
 
-
-参考工程 👉 `github stm32f103_example <https://github.com/czc13611858691/stm32f103_example>`_ 
