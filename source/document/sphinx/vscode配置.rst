@@ -7,7 +7,7 @@ vscode配置
 .. image:: media/vscode插件rst.jpg
     :align: center
 
-
+|
 
 Live Server
 *************************
@@ -15,6 +15,7 @@ Live Server
     :align: center
     :width: 500px
 
+|
 
 实时更新 html 文档
 
