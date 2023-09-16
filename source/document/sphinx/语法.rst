@@ -33,6 +33,9 @@
     
     .. toctree::
         :numbered:
+        :glob:
+
+        xx/*
 
 
 图片
