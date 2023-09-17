@@ -33,6 +33,6 @@ language = 'zh_CN'
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
-html_search_options = {'dict': 'C:/Users/Admin/AppData/Local/Programs/Python/Python37/Lib/site-packages/jieba/dict.txt'}
+html_search_options = {'dict': 'C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Lib/site-packages/jieba/dict.txt'}

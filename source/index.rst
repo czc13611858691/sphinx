@@ -16,3 +16,4 @@
    document/网址收藏
    document/cubli_mini
    document/stm32/stm32
+   document/右键菜单配置注册表/右键菜单配置注册表.rst
