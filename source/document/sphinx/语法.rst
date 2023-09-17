@@ -32,6 +32,7 @@
 .. code-block:: rst
     
     .. toctree::
+        :caption: Table of Contents
         :numbered:
         :glob:
 

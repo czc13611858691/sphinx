@@ -14,3 +14,6 @@
    document/beyond配置
    document/vscode配置
    document/vscode_openocd_stm32调试
+   document/网址收藏
+   document/cubli_mini
+   document/stm32虚拟串口

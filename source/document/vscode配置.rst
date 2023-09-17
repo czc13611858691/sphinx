@@ -277,4 +277,29 @@ restructuredtext.json
             "prefix": "header6",
             "body": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
         },
+        "toctree": {
+            "prefix": "toctree",
+            "body": [
+            ".. toctree::",
+            "    :numbered:",
+            ""
+            ],
+            "description": "toctree"
+        },
+        "start": {
+            "prefix": "start",
+            "body": [
+                "${TM_FILENAME_BASE}",
+                "######################################",
+            ]
+        },
+        "image": {
+            "prefix": "image",
+            "body": [
+            ".. image:: ${1:path}",
+            "    :align: center",
+            "    :width: ${2:550}px"
+            ],
+            "description": "image"
+        }
     }
