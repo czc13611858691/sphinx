@@ -11,7 +11,6 @@ cubli_mini
 
 
 
-
 .. toctree::
     :numbered:
     :caption: 目录

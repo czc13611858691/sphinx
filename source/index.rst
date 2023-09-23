@@ -7,17 +7,50 @@
 ==================================
 
 .. toctree::
-   :maxdepth: 2
    :glob:
-   
-   document/sphinx.rst
-   document/小说
-   document/beyond配置
-   document/vscode配置
-   document/网址收藏
-   document/cubli_mini
-   document/stm32/stm32
-   document/右键菜单配置注册表/右键菜单配置注册表.rst
-   document/杂项/*
-   document/pythonScript/*
-   document/C语言/*
+   :caption: 杂项
+
+   杂项/*
+
+.. toctree::
+   :glob:
+   :caption: 项目
+
+   项目/*
+
+.. toctree::
+   :glob:
+   :caption: 编程语言
+
+   编程语言/*
+
+.. toctree::
+   :glob:
+   :caption: 工具
+
+   工具/*
+
+.. toctree::
+   :glob:
+   :caption: 单片机
+
+   单片机/*
+
+.. toctree::
+   :glob:
+   :caption: 结构
+
+   结构/*
+
+.. toctree::
+   :glob:
+   :caption: 电路
+
+   电路/*
+
+
+.. toctree::
+   :glob:
+   :caption: 知识
+
+   知识/*

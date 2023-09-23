@@ -8,6 +8,6 @@
 5. 展开shell
 6. 找到要配置的项目
 
-.. image:: 注册表.png
+.. image:: 右键菜单配置注册表/注册表.png
     :align: center
     :width: 550px
