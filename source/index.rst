@@ -8,6 +8,37 @@
 
 .. toctree::
    :glob:
+   :caption: 工具
+
+   工具/*
+
+
+.. toctree::
+   :glob:
+   :caption: 编程语言
+
+   编程语言/*
+
+
+
+.. toctree::
+   :glob:
+   :caption: 单片机
+
+   单片机/*
+
+
+
+.. toctree::
+   :glob:
+   :caption: 知识
+
+   知识/*
+
+
+
+.. toctree::
+   :glob:
    :caption: 杂项
 
    杂项/*
@@ -18,23 +49,8 @@
 
    项目/*
 
-.. toctree::
-   :glob:
-   :caption: 编程语言
 
-   编程语言/*
 
-.. toctree::
-   :glob:
-   :caption: 工具
-
-   工具/*
-
-.. toctree::
-   :glob:
-   :caption: 单片机
-
-   单片机/*
 
 .. toctree::
    :glob:
@@ -48,9 +64,3 @@
 
    电路/*
 
-
-.. toctree::
-   :glob:
-   :caption: 知识
-
-   知识/*

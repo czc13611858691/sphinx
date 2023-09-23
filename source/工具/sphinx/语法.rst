@@ -52,6 +52,15 @@
         :height: xx px
 
 
+`Figure语法详解 <https://docutils.sourceforge.io/docs/ref/rst/directives.html#figure>`_ 
+
+.. code-block:: rst
+
+    .. figure:: path
+
+        :align: center
+        :figwidth: xxpx
+
 空行的添加
 ***************************
 

@@ -1,5 +1,5 @@
 makefile模板
 ######################################
 
-.. literalinclude:: makefile
+.. literalinclude:: makefile模板/makefile
    :language: makefile

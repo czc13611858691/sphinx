@@ -301,6 +301,17 @@ restructuredtext.json
             "    :width: ${2:550}px"
             ],
             "description": "image"
+        },
+        "figure": {
+            "prefix": "figure",
+            "body": [
+            ".. figure:: ${1:example}",
+            "    :align: center",
+            "    :figwidth: 550px",
+            "",
+            "    xx"
+            ],
+            "description": "figure"
         }
     }
 

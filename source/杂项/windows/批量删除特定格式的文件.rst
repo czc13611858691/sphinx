@@ -1,0 +1,10 @@
+批量删除特定格式的文件
+######################################
+
+`windows下快速批量删除某类型文件 <https://www.jianshu.com/p/b3251ac42b71>`_ 
+
+cmd命令行
+
+.. code-block:: bash
+
+    del /a /f /s /q "*.IMA" ".dcm"
