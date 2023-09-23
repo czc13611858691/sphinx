@@ -1,0 +1,35 @@
+无符号数转字符串
+######################################
+
+**源代码**
+
+.. code-block:: c
+
+    void ultoa(unsigned long num, char *str, char radix)
+    {
+        char index[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        int i = 0, j = 0, k = 0;
+
+        do
+        {
+            str[i++] = index[num % radix];
+            num /= radix;
+        } while (num);
+        char temp;
+        for (j = k; j <= (i - 1) / 2; j++)
+        {
+            temp = str[j];
+            str[j] = str[i - 1 + k - j];
+            str[i - 1 + k - j] = temp;
+        }
+        str[i] = '\0';
+    }
+
+
+
+**例子**
+
+.. code-block:: c
+
+    char str_tmp[16] = {0};
+    ultoa(322,str_tmp,10);

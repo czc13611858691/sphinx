@@ -8,6 +8,7 @@
 
 .. toctree::
    :maxdepth: 2
+   :glob:
    
    document/sphinx.rst
    document/小说
@@ -17,3 +18,6 @@
    document/cubli_mini
    document/stm32/stm32
    document/右键菜单配置注册表/右键菜单配置注册表.rst
+   document/杂项/*
+   document/pythonScript/*
+   document/C语言/*

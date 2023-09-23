@@ -303,3 +303,24 @@ restructuredtext.json
             "description": "image"
         }
     }
+
+vscode_构建任务
+*********************************************
+
+**tasks.json**
+
+.. code-block:: json
+
+    {
+        "tasks": [
+            {
+                "label": "build",
+                "type": "shell",
+                "command": "make html",
+                "args": [
+                ],
+                "group": "build"
+            }
+        ],
+        "version": "2.0.0"
+    }

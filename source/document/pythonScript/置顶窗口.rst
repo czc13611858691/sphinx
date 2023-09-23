@@ -1,0 +1,59 @@
+置顶窗口
+######################################
+
+**fiwWindow.py**
+
+.. code-block:: python
+
+    import win32gui
+    import win32con
+
+
+    class fixWinodw:
+        flag = False
+        hw = ""
+
+        def force_focus(self, hwnd):
+            win32gui.SetWindowPos(
+                hwnd,
+                win32con.HWND_TOPMOST,
+                0,
+                0,
+                0,
+                0,
+                win32con.SWP_NOOWNERZORDER | win32con.SWP_NOSIZE | win32con.SWP_NOMOVE,
+            )
+            print("置顶", hwnd, win32gui.GetWindowText(hwnd))
+
+        def cancel_focus(self, hwnd):
+            win32gui.SetWindowPos(
+                hwnd,
+                win32con.HWND_NOTOPMOST,
+                0,
+                0,
+                0,
+                0,
+                win32con.SWP_SHOWWINDOW | win32con.SWP_NOSIZE | win32con.SWP_NOMOVE,
+            )
+            print("取消置顶", hwnd, win32gui.GetWindowText(hwnd))
+
+        def handler(self, op, hwnd):
+            op(hwnd)
+
+        def fun(self):
+            if not self.flag and win32gui.GetForegroundWindow() != "":
+                self.hd = win32gui.GetForegroundWindow()
+                self.handler(self.force_focus, self.hd)
+                self.flag = True
+            elif self.flag and win32gui.GetForegroundWindow() != "":
+                if self.hd == win32gui.GetForegroundWindow():
+                    self.handler(self.cancel_focus, win32gui.GetForegroundWindow())
+                    self.flag = False
+
+
+    g_fixWinodw = fixWinodw()
+
+    if __name__ == "__main__":
+        g_fixWinodw.fun()
+
+   
