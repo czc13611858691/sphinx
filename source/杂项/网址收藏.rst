@@ -1,8 +1,52 @@
 网址收藏
 #############################################
 
+杂项
+*********************************************
+
 - `vscode code snippet生成 <https://snippet-generator.app/>`_ 
 - `软件下载1 <https://getintopc.com/?id=001823038596>`_ 
 - `软件下载2 <https://downloadlynet.ir/>`_ 
-- `奇异工具 <https://www.q1cloud.me/>`_ 
 - `crc计算在线工具 <http://www.ip33.com/crc.html>`_ 
+- `bilibili视频下载 <https://bili.iiilab.com/>`_ 
+- `电路在线仿真circuitjs <https://www.falstad.com/circuit/>`_ 
+- `阿里图库 <https://www.iconfont.cn/>`_ 
+- `在线latex编辑器 <https://www.latexlive.com/##>`_ 
+- `上海五险一金税后计算器 <https://upup.li/tools/salary/>`_ 
+- `猫狸盘搜 <https://www.alipansou.com/>`_ 
+- `阿里云盘分享-小蜜蜂全站收藏 <https://www.aliyundrive.com/s/GP4HVHZ5hiu/folder/623888fbb128fb7c4cbf41afb0f48a00bfca9974>`_ 
+- `易书 zlibrary <https://search.yibook.org/>`_ 
+- `【软件包合集】keil c51 MDK V5 V4 v3 v2 所有版本软件包下载(包括最新) <https://blog.csdn.net/supergame111/article/details/89672884>`_ 
+- `在线积分计算器 WolframAlpha <https://www.wolframalpha.com/calculators/integral-calculator/>`_ 
+
+
+开源项目
+*********************************************
+
+- `odrive <https://odriverobotics.com/>`_ 
+- `simplefoc <https://simplefoc.com/>`_ 
+- `openpnp <https://openpnp.org/>`_ 
+- `betaflight <https://betaflight.com/>`_ 
+- `smoothieware <https://smoothieware.org/>`_ 
+- `X-TRACK <https://github.com/FASTSHIFT/X-TRACK>`_ 
+- `便携式示波器 <https://oshwhub.com/Alpha-go/a5IITjkVGF1cA9kyTV2V9sIHra7GcIg2>`_ 
+- `ESPlay Micro微型开源游戏掌机 <https://oshwhub.com/LiiGuang/esplay-micro-V2>`_ 
+- `Mao喵喵机热敏打印机 <https://oshwhub.com/SakuraNeko/mao-re-min-da-yin-ji>`_ 
+- `cmsis-dap-技小新 <https://oshwhub.com/jixin002/stm32f103c8t6_cmsis-dap>`_ 
+- `CKLINK <https://oshwhub.com/a569114749/cklink>`_ 
+- `自平衡的莱洛三角形 <https://oshwhub.com/z13660/dong-liang-ping-heng>`_ 
+- `扑翼机 <https://www.instructables.com/Opensource-Ornithopter-Prototype-Arduino-Powered-a/>`_ 
+- `5.8Ghz图传 <https://oshwhub.com/clz1/5.8Ghztu-zhuan>`_ 
+- `Simplified 3D Printed Animatronic Dual Eye <http://www.nilheim.co.uk/latest-projects-and-blog/simplified-3d-printed-animatronic-dual-eye-mechanism>`_ 
+- `arduino 制作富斯接收与飞控一体接收机 <https://www.moz8.com/thread-179809-1-1.html>`_ 
+- `arxml解析autosarfactory <https://github.com/girishchandranc/autosarfactory>`_ 
+- `开源autosar classic-platform <https://github.com/openAUTOSAR/classic-platform>`_ 
+- `开源autosar Arccore <https://github.com/Depthkernelcore/Arccore>`_ 
+- `CANable-MKS <https://github.com/makerbase-mks/CANable-MKS>`_ 
+- `pcan_cantact <https://github.com/moonglow/pcan_cantact>`_ 
+- `nanoDLA 逻辑分析仪 <https://github.com/wuxx/nanoDLA>`_ 
+- `舵机机器人 <https://gitee.com/dragon9708/robot>`_ 
+- `4g图传小车 <https://oshwhub.com/le12138/40yuan-da-zao-4Gyao-kong-ju-wu-x>`_ 
+- `picoc-C语言解释器 <https://code.google.com/archive/p/picoc/>`_ 
+- `picoc-C语言解释器v2.1 <https://github.com/larryhe/tiny-c-interpreter>`_ 
+- `PikaPython <https://github.com/pikasTech/pikaPython>`_ 
