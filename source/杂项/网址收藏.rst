@@ -50,3 +50,9 @@
 - `picoc-C语言解释器 <https://code.google.com/archive/p/picoc/>`_ 
 - `picoc-C语言解释器v2.1 <https://github.com/larryhe/tiny-c-interpreter>`_ 
 - `PikaPython <https://github.com/pikasTech/pikaPython>`_ 
+- `ESPLink <https://github.com/wuxx/ESPLink>`_ 
+- `github dbc2excel <https://github.com/energystoryhhl/dbc2excel>`_ 
+- `cmd-parser <https://github.com/jiejieTop/cmd-parser>`_ 
+- `jinja2生成c代码 <https://github.com/pythonlibrary/auto-coding-demo>`_ 
+- `物联网教程 <https://github.com/alwxkxk/soft-and-hard>`_ 
+- `按键驱动-MultiButton <https://github.com/0x1abin/MultiButton>`_ 

@@ -7,7 +7,7 @@ KICAD&altium
 
 `github-InteractiveHtmlBomForAD <https://github.com/lianlian33/interactivehtmlbomforad>`_ 
 
-`KICAD <https://github.com/openscopeproject/InteractiveHtmlBom>`_ 
+`KICAD html bom <https://github.com/openscopeproject/InteractiveHtmlBom>`_ 
 
 
 立创EDA
