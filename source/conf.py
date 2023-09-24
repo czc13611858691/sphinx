@@ -12,7 +12,7 @@ import sphinx_rtd_theme
 project = '曹志成的文档'
 copyright = '2023, 曹志成'
 author = '曹志成'
-release = 'v0'
+release = ''
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -34,7 +34,9 @@ language = 'zh_CN'
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # html_static_path = ['_static']
-
+sphinx_rtd_theme = {
+    'navigation_depth': -1,
+}
 # html_search_options = {'dict': 'C:/Users/Administrator/AppData/Local/Programs/Python/Python37/Lib/site-packages/jieba/dict.txt'}
 html_search_options = {'dict': 'c:/Users/Admin/AppData/Local/Programs/Python/Python37/Lib/site-packages/jieba/dict.txt'}
 
