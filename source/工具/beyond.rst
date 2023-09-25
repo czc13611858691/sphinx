@@ -16,13 +16,13 @@ bat example
    @REM .\BeyondCompare.bat os
 
    if "%1" == "bsw" (
-       "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe" "BasicSoftware\src\bsw" "BasicSoftware\src\bsw1"
+       "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe" "xx" "xx"
    )
-   if "%1" == "rte" (
-       "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe" "BasicSoftware\src\rte" "BasicSoftware\src\rte1"
+   if "%1" == "rte" (f
+       "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe" "xx" "xx"
    )
    if "%1" == "os" (
-       "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe" "BasicSoftware\src\os" "BasicSoftware\src\os1"
+       "D:\Program Files (x86)\Beyond Compare 3\BCompare.exe" "xx" "xx"
    )
 
 也可以使用 ``BComp.exe`` ，BCompare.exe不关闭比较窗口 bat

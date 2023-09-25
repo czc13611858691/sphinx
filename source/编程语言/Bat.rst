@@ -9,8 +9,8 @@ Bat命令行
 .. code:: shell
 
    @echo off
-   set "SrcDir=E:\work\Project\TC387\9_Reference\Gen3\TC275_INVCON3_TMSW"
-   Set "DstDir=S:\3. PlatformProject\3.1 INV3_TC387\2.BSW\Reference\TC275_INVCON3_TMSW"
+   set "SrcDir=xx"
+   Set "DstDir=bb"
 
    robocopy "%SrcDir%" "%DstDir%" /s /PURGE /MT:128 /ETA
 

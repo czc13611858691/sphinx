@@ -132,16 +132,13 @@ iLLD demo 工程中是放在 ``Ifx_Ssw_C_Init`` 函数中进行的。
 
 .. code-block:: c
 
-    CORE_ID = CPU3 ;
+    CORE_ID = CPU0 ;
     SECTIONS
     {
         /*DSRAM3 Sections*/
         CORE_SEC(.data) : FLAGS(awl)
         {
-            *Ifx_Ssw_Tc3.* (.data)
-            *Cpu3_Main.* (.data)
-            *(.data_cpu3)
-            *(.data_cpu3.*)
+            *(.data)
             . = ALIGN(2);
         } > dsram3 AT> pfls0
 
@@ -152,7 +149,7 @@ iLLD demo 工程中是放在 ``Ifx_Ssw_C_Init`` 函数中进行的。
 
     CORE_ID & CORE_SEC
 
-后面定义的data段可以用 ``.CPU3.data`` 表示
+后面定义的data段可以用 ``.CPU0.data`` 表示
 
 > xx 代表变量位于的区域。
 
