@@ -56,3 +56,4 @@
 - `jinja2生成c代码 <https://github.com/pythonlibrary/auto-coding-demo>`_ 
 - `物联网教程 <https://github.com/alwxkxk/soft-and-hard>`_ 
 - `按键驱动-MultiButton <https://github.com/0x1abin/MultiButton>`_ 
+- `手搓脑机接口 <https://gitee.com/tuanergou/bci_proj?_from=gitee_search>`_   `视频介绍 <https://www.bilibili.com/video/BV1xu4y167zd/?spm_id_from=333.1007.top_right_bar_window_default_collection.content.click&vd_source=b5964dfb66a275d544a7f3638b4ad326>`_ 

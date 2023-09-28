@@ -335,3 +335,41 @@ vscode_构建任务
         ],
         "version": "2.0.0"
     }
+
+Paste Image插件配置
+*********************************************
+
+插件截图
+=============================================
+
+.. figure:: vscode配置/example.png
+    :align: center
+    :figwidth: 550px
+
+    插件截图
+
+打开用户配置
+=============================================
+
+.. figure:: vscode配置/打开用户配置.png
+    :align: center
+    :figwidth: 550px
+
+    打开用户配置
+
+添加如下代码
+=============================================
+.. code-block:: json
+
+   "pasteImage.path": "${currentFileDir}/${currentFileNameWithoutExt}"
+
+最后效果
+=============================================
+
+会在当前文件目录下创建和当前目录一样名字的文件夹，并将图片放入其中，文件名以日期时间作为编号，如果当时有字符串被选中，则以字符串的名字作为图片名
+
+.. figure:: vscode配置/2023-09-25-23-38-05.png
+    :align: center
+    :figwidth: 550px
+
+    PasteImage插件配置效果
