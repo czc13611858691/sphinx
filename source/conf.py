@@ -7,7 +7,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Czc's Library"
+project = "曹志成的"
 copyright = ''
 author = '曹志成'
 release = ''
