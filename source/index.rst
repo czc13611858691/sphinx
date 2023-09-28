@@ -1,66 +1,56 @@
-.. 曹志成 documentation master file, created by
-   sphinx-quickstart on Fri Sep 15 12:23:58 2023.
+.. Cdd_HwMon_ExtWdg documentation master file, created by
+   sphinx-quickstart on Fri Sep 15 09:50:51 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-曹志成的文档库
-==================================
+Czc's Library
+============================================
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 工具
 
-   工具/*
-
+   编程语言.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 编程语言
 
-   编程语言/*
-
-
+   电路.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 单片机
 
-   单片机/*
-
-
+   工具.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 知识
 
-   知识/*
-
-
+   结构.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 杂项
 
-   杂项/*
+   开发板.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 项目
 
-   项目/*
-
-
-
+   项目.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 结构
 
-   结构/*
+   杂项.rst
 
 .. toctree::
+   :maxdepth: 2
    :glob:
-   :caption: 电路
-
-   电路/*
+   
+   知识.rst
 
