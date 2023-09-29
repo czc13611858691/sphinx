@@ -1,3 +1,7 @@
+## v0.0.1
+
+Commit.py 中推送功能忘记打开了
+
 ## v0.0.0
 
 以后提交方式改为修改 CHANGELOG.md 之后，执行 Commit.bat 脚本

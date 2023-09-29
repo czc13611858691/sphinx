@@ -33,4 +33,4 @@ temp = 'git tag -a '+verstr
 for i in CommitMsgStr:
     temp = temp+' -m '+'"'+i+'"'
 system(temp)
-print('git push')
+system('git push')
