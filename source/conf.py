@@ -32,7 +32,9 @@ language = 'zh_CN'
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     'navigation_depth': -1,
-    "header_links_before_dropdown": 8
+    "header_links_before_dropdown": 8,
+    'show_toc_level' : -1,
+    'show_prev_next' : False
 }
 html_search_options = {'dict': '.venv/Lib/site-packages/jieba/dict.txt'}
 # html_search_options = {'dict': 'c:/Users/Admin/AppData/Local/Programs/Python/Python37/Lib/site-packages/jieba/dict.txt'}
