@@ -1,8 +1,6 @@
 from os import system
-from time import localtime, strftime
 import re
 
-nowTime = strftime('%Y-%m-%d %H:%M:%S', localtime())
 f = open('./CHANGELOG.md', 'r+', encoding='UTF-8')
 CommitMsgStr = []
 verstr = ''
