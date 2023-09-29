@@ -37,3 +37,4 @@ html_theme_options = {
 html_search_options = {'dict': '.venv/Lib/site-packages/jieba/dict.txt'}
 # html_search_options = {'dict': 'c:/Users/Admin/AppData/Local/Programs/Python/Python37/Lib/site-packages/jieba/dict.txt'}
 
+html_static_path = ['_static']
