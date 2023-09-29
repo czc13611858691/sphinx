@@ -1,4 +1,7 @@
-## v1.0.0
+## v0.0.0
 
-1.test11
-2.test22
+以后提交方式改为修改 CHANGELOG.md 之后，执行 Commit.bat 脚本
+
+1. 增加 commit.bat
+2. 增加自动 push 功能
+3. 格式化 Commit.py
