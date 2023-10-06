@@ -1,0 +1,13 @@
+右键菜单配置注册表
+######################################
+
+1. win+R，然后输入regedit（如下图），打开注册表编辑器
+2. 展开HKEY_CLASSES_ROOT
+3. 展开Directory
+4. 展开Background
+5. 展开shell
+6. 找到要配置的项目
+
+.. image:: 右键菜单配置注册表/注册表.png
+    :align: center
+    :width: 550px

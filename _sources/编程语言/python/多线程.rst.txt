@@ -1,0 +1,101 @@
+多线程
+######################################
+
+demo
+*********************************************
+
+.. code-block:: python
+
+    from threading import Thread
+    from time import sleep, ctime
+
+
+    class MyClass(object):
+
+        def func(self,name,sec):
+            print('---开始---', name, '时间', ctime())
+            sleep(sec)
+            print('***结束***', name, '时间', ctime())
+
+    def main():
+        # 创建 Thread 实例
+        t1 = Thread(target=MyClass().func, args=(1, 1))
+        t2 = Thread(target=MyClass().func, args=(2, 2))
+
+        # 启动线程运行
+        t1.start()
+        t2.start()
+
+        # 等待所有线程执行完毕
+        t1.join()  # join() 等待线程终止，要不然一直挂起
+        t2.join()
+
+    if __name__=="__main__":
+        main()
+
+**结果**
+
+.. code-block:: 
+
+    ---开始--- 1 时间 Mon Sep 25 07:50:30 2023
+    ---开始--- 2 时间 Mon Sep 25 07:50:30 2023
+    ***结束*** 1 时间 Mon Sep 25 07:50:31 2023
+    ***结束*** 2 时间 Mon Sep 25 07:50:32 2023
+
+互斥锁
+*********************************************
+
+**核心代码**
+
+.. code-block:: python
+
+   mutex = threading.Lock()
+
+   mutex.acquire()
+   xxx
+   mutex.release()
+
+.. code-block:: python
+
+    import threading
+    import time
+    import random
+    
+    class MyThread(threading.Thread):
+        def __init__(self, name, mutex, arg):
+            threading.Thread.__init__(self, daemon=True)
+            self.name = name
+            self.mutex = mutex
+            self.arg = arg
+    
+        def log(self, msg):
+            print("{0} - {1} - {2}".format(self.name, time.time(), msg))
+    
+        def sleep(self):
+            time.sleep(random.randint(1, 5))
+    
+        def run(self):
+            for i in range(10):
+                self.log("do something")
+                self.sleep()
+    
+            self.mutex.acquire()
+            self.arg['count'] = self.arg.get('count', 0) + 1
+            self.mutex.release()
+    
+    
+    def test_thread():
+        mutex = threading.Lock()
+        arg = dict()
+        arg['count'] = 0
+        for i in range(10):
+            t = MyThread(str(i), mutex, arg)
+            t.start()
+        while True:
+            if arg.get('count', 0) >= 10:
+                break
+            time.sleep(0.5)
+        print("end and exit")
+    
+    if "__main__" == __name__:
+        test_thread()
