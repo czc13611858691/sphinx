@@ -1,9 +1,0 @@
-硬件
-######################################
-
-原理图
-*********************************************
-- :download:`control board <media/Cubli_Control_Board_sche.pdf>` 
-- :download:`AS5600 <media/AS5600.pdf>` 
-- :download:`mpu6050 <media/mpu6050.pdf>` 
-- :download:`UART <media/UART.pdf>` 
