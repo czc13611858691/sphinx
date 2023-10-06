@@ -1,0 +1,55 @@
+官方资料
+######################################
+
+简介
+*********************************************
+
+`官网 <https://www.simplefoc.com/>`_ 
+
+`github Arduino-FOC <https://github.com/simplefoc/Arduino-FOC>`_ 
+
+`官方文档 <https://docs.simplefoc.com/>`_ 
+
+
+驱动板
+*********************************************
+
+SimpleFOCMini
+=============================================
+
+
+`SimpleFOCMini官方介绍 <https://docs.simplefoc.com/simplefocmini>`_ 
+
+- DRV8313
+- 小于3A电流
+
+**PCB工程链接**
+
+`立创EDA <https://oshwlab.com/the.skuric/simplefocmini>`_ 
+
+`github工程 <https://github.com/simplefoc/SimpleFOCMini>`_ 
+
+SimpleFocShield
+=============================================
+
+- 小于5A电流
+
+介绍
+
+https://docs.simplefoc.com/arduino_simplefoc_shield_showcase
+
+工程链接
+
+https://oshwlab.com/the.skuric/simplefocshield
+
+https://github.com/simplefoc/Arduino-SimpleFOCShield
+
+Arduino-SimpleFOC-PowerShield
+=============================================
+
+- 小于5A电流
+
+
+工程链接
+
+https://github.com/simplefoc/Arduino-SimpleFOC-PowerShield

@@ -1,0 +1,17 @@
+串口
+######################################
+
+工具
+*********************************************
+
+`XCOM <https://wwzl.lanzoue.com/is3CA19od60j>`_ 
+
+密码:``1fkn``
+
+`vofa <https://wwzl.lanzoue.com/iYdK919od4gd>`_ 
+
+密码:``65ja``
+
+`tera term <https://wwzl.lanzoue.com/ic7L519od3of>`_ 
+
+密码:``cj89``

@@ -1,0 +1,757 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="zh-CN" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Hightec免费工具链_链接脚本学习 &#8212; 曹志成的  文档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '开发板/aurix/Hightec免费工具链_链接脚本学习';</script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="mcd_api" href="mcd_api.html" />
+    <link rel="prev" title="Hightec免费工具链_编译选项" href="Hightec%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7%E9%93%BE_%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">曹志成的  文档</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80.html">
+                        编程语言
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%94%B5%E8%B7%AF.html">
+                        电路
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E5%B7%A5%E5%85%B7.html">
+                        工具
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%BB%93%E6%9E%84.html">
+                        结构
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../%E5%BC%80%E5%8F%91%E6%9D%BF.html">
+                        开发板
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E9%A1%B9%E7%9B%AE.html">
+                        项目
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E6%9D%82%E9%A1%B9.html">
+                        杂项
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%9F%A5%E8%AF%86.html">
+                        知识
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/czc13611858691/sphinx/tree/main" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80.html">
+                        编程语言
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%94%B5%E8%B7%AF.html">
+                        电路
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E5%B7%A5%E5%85%B7.html">
+                        工具
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%BB%93%E6%9E%84.html">
+                        结构
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../../%E5%BC%80%E5%8F%91%E6%9D%BF.html">
+                        开发板
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E9%A1%B9%E7%9B%AE.html">
+                        项目
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E6%9D%82%E9%A1%B9.html">
+                        杂项
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../%E7%9F%A5%E8%AF%86.html">
+                        知识
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/czc13611858691/sphinx/tree/main" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../arduino.html">arduino</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../aurix.html">aurix</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Hightec%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7%E9%93%BE_%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9.html">Hightec免费工具链_编译选项</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Hightec免费工具链_链接脚本学习</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mcd_api.html">mcd_api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%E8%B5%84%E6%96%99%E5%88%86%E4%BA%AB.html">资料分享</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../linux.html">linux</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../stm32.html">stm32</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../stm32/stm32.html">stm32</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../stm32/stm32%E8%99%9A%E6%8B%9F%E4%B8%B2%E5%8F%A3.html">stm32虚拟串口</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../stm32/vscode_openocd_stm32%E8%B0%83%E8%AF%95.html">vscode+openocd+stm32环境搭建</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../stm32/vscode_openocd/%E5%B7%A5%E5%85%B7%E9%93%BE.html">1. 工具链</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../stm32/vscode_openocd/%E5%8F%82%E8%80%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html">2. 参考配置文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../stm32/stm32%E8%99%9A%E6%8B%9F%E4%B8%B2%E5%8F%A3.html">stm32虚拟串口</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../stm32/vscode_openocd_stm32%E8%B0%83%E8%AF%95.html">vscode+openocd+stm32环境搭建</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../stm32/vscode_openocd/%E5%B7%A5%E5%85%B7%E9%93%BE.html">1. 工具链</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../stm32/vscode_openocd/%E5%8F%82%E8%80%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.html">2. 参考配置文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../%E5%BC%80%E5%8F%91%E6%9D%BF.html" class="nav-link">开发板</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../aurix.html" class="nav-link">aurix</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Hightec免费工具链_链接脚本学习</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="hightec">
+<h1>Hightec免费工具链_链接脚本学习<a class="headerlink" href="#hightec" title="此标题的永久链接">#</a></h1>
+<section id="id1">
+<h2>免费工具链网址申请链接(1年)<a class="headerlink" href="#id1" title="此标题的永久链接">#</a></h2>
+<p><a class="reference external" href="https://free-entry-toolchain.hightec-rt.com/">https://free-entry-toolchain.hightec-rt.com/</a></p>
+</section>
+<section id="id2">
+<h2>简介<a class="headerlink" href="#id2" title="此标题的永久链接">#</a></h2>
+<p>tricore-gcc 的链接脚本是以 <code class="docutils literal notranslate"><span class="pre">lsl</span></code> 为后缀的文件。</p>
+<p>安装完工具链后，安装目录下会包含 <code class="docutils literal notranslate"><span class="pre">ld.pdf</span></code> 和 <code class="docutils literal notranslate"><span class="pre">usersguide.pdf</span></code> 文件。</p>
+<p>上述两个文件包含了链接脚本的介绍。</p>
+<p><a class="reference external" href="https://github.com/czc13611858691/TC264/blob/master/1_ToolEnv/0_Build/1_Config/Config_Tricore_Gnuc/Lcf_Gnuc_Tricore_Tc.lsl">link文件参考</a></p>
+</section>
+<section id="id3">
+<h2>一个简单的例子<a class="headerlink" href="#id3" title="此标题的永久链接">#</a></h2>
+<p>参考文章 <a class="reference external" href="https://www.cnblogs.com/jianhua1992/p/16852784.html">链接脚本(Linker Scripts)语法和规则解析(自官方手册)</a></p>
+<p>代码应在地址 0x10000 处加载，数据应从地址 0x8000000 开始。</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">SECTIONS</span>
+<span class="p">{</span>
+<span class="p">.</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x10000</span><span class="p">;</span>
+<span class="p">.</span><span class="n">text</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">*</span><span class="p">(.</span><span class="n">text</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="p">.</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x8000000</span><span class="p">;</span>
+<span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">*</span><span class="p">(.</span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="p">.</span><span class="n">bss</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">*</span><span class="p">(.</span><span class="n">bss</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h2>程序起始点定义<a class="headerlink" href="#id4" title="此标题的永久链接">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENTRY</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>iLLD 工程中定义如下:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENTRY</span><span class="p">(</span><span class="n">_START</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>程序起始地址为:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">_START</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Ifx_Ssw_jumpToFunction</span><span class="p">(</span><span class="n">__StartUpSoftware</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="text-bss-data-rodata">
+<h2>text bss data rodata<a class="headerlink" href="#text-bss-data-rodata" title="此标题的永久链接">#</a></h2>
+<ul class="simple">
+<li><p>.text ：程序代码</p></li>
+<li><p>.rodata ：只读数据</p></li>
+<li><p>.data ：可读写且需要初始化数据</p></li>
+<li><p>.bss ：可读写的置零初始化数据</p></li>
+</ul>
+</section>
+<section id="region-alias">
+<h2>REGION_ALIAS 内存段重命名<a class="headerlink" href="#region-alias" title="此标题的永久链接">#</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">REGION_ALIAS</span><span class="p">(</span><span class="w"> </span><span class="n">default_ram</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">dsram0</span><span class="p">)</span>
+<span class="n">REGION_ALIAS</span><span class="p">(</span><span class="w"> </span><span class="n">default_rom</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">pfls0</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h2>注释的方式<a class="headerlink" href="#id5" title="此标题的永久链接">#</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*Un comment one of the below statement groups to enable CpuX DMI RAM to hold global variables*/</span>
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h2>中断向量表<a class="headerlink" href="#id6" title="此标题的永久链接">#</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">inttab_tcx_y</span>
+</pre></div>
+</div>
+<p><cite>x</cite> 代表核心 , <cite>y</cite> 代表优先级</p>
+<p>每个核心都有一组中断向量表，每个优先级占用 32 字节的内存地址。</p>
+</section>
+<section id="clear-table-copy-table">
+<h2>__clear_table 和 __copy_table<a class="headerlink" href="#clear-table-copy-table" title="此标题的永久链接">#</a></h2>
+<p>有初始值和没有初始值的全局变量分别需要在程序运行之前被重新赋值和清空。也就是所谓的 <cite>data</cite> 段和 <cite>bss</cite> 段的区别。</p>
+<p>iLLD demo 工程中是放在 <code class="docutils literal notranslate"><span class="pre">Ifx_Ssw_C_Init</span></code> 函数中进行的。</p>
+</section>
+<section id="id7">
+<h2>获取链接文件中定义值的方式<a class="headerlink" href="#id7" title="此标题的永久链接">#</a></h2>
+<p>参考如下:</p>
+<p><strong>link文件中</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">PROVIDE</span><span class="p">(</span><span class="n">__copy_table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.);</span>
+</pre></div>
+</div>
+<p><strong>代码中</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">extern</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">__copy_table</span><span class="p">[];</span><span class="w">   </span><span class="cm">/**&lt; copy table entry */</span>
+<span class="n">pTable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">__copy_table</span><span class="p">;</span>
+</pre></div>
+</div>
+</section>
+<section id="data-link">
+<h2>.data段 link文件定义详解<a class="headerlink" href="#data-link" title="此标题的永久链接">#</a></h2>
+<p>参考代码如下:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">CORE_ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CPU0</span><span class="w"> </span><span class="p">;</span>
+<span class="n">SECTIONS</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="cm">/*DSRAM3 Sections*/</span>
+<span class="w">    </span><span class="n">CORE_SEC</span><span class="p">(.</span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FLAGS</span><span class="p">(</span><span class="n">awl</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="o">*</span><span class="p">(.</span><span class="n">data</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ALIGN</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">dsram3</span><span class="w"> </span><span class="n">AT</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pfls0</span>
+</pre></div>
+</div>
+<figure class="align-center" id="id12" style="width: 550px">
+<img alt="../../_images/2023-09-25-10-41-35.png" src="../../_images/2023-09-25-10-41-35.png" />
+<figcaption>
+<p><span class="caption-text">CORE_ID &amp; CORE_SEC</span><a class="headerlink" href="#id12" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>后面定义的data段可以用 <code class="docutils literal notranslate"><span class="pre">.CPU0.data</span></code> 表示</p>
+<p>&gt; xx 代表变量位于的区域。</p>
+<p>AT&gt; 代表变量初始值加载的地址。</p>
+<p>ROM 的地址被称作 LMA，获取他们值的方式可以参考如下:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">LONG</span><span class="p">(</span><span class="n">LOADADDR</span><span class="p">(.</span><span class="n">data</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>RAM 的地址被称作 VMA</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">LONG</span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ADDR</span><span class="p">(.</span><span class="n">data</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>获取段的大小可以用 sizeof 关键词</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">LONG</span><span class="p">(</span><span class="n">SIZEOF</span><span class="p">(.</span><span class="n">data</span><span class="p">));</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h2>设置段的绝对地址<a class="headerlink" href="#id8" title="此标题的永久链接">#</a></h2>
+<p>参考中断向量表</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">LCF_INTVEC0_START</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x802FE000</span><span class="p">;</span>
+<span class="n">__INTTAB_CPU0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LCF_INTVEC0_START</span><span class="p">;</span>
+<span class="p">.</span><span class="n">inttab_tc0_000</span><span class="w"> </span><span class="p">(</span><span class="n">__INTTAB_CPU0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">0x0000</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ALIGN</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="p">;</span><span class="w">  </span><span class="n">KEEP</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">(.</span><span class="n">intvec_tc0_0</span><span class="w">  </span><span class="p">));</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="attr">
+<h2>内存块定义时 attr属性<a class="headerlink" href="#attr" title="此标题的永久链接">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;name&gt; [(&lt;attr&gt;)] : ORIGIN = &lt;origin&gt;, LENGTH = &lt;len&gt;
+dsram3_local (w!xp): org = 0xd0000000, len = 96K
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>R Read-only section.</p></li>
+<li><p>W Read/write section.</p></li>
+<li><p>X Executable section.</p></li>
+<li><p>A Allocatable section.</p></li>
+<li><p>I Initialized section.</p></li>
+<li><p>L Same as I.</p></li>
+<li><p>P Section contains PCP code or data.</p></li>
+<li><p>! Invert the sense of any of the preceding attributes.</p></li>
+</ul>
+</section>
+<section id="flags">
+<h2>FLAGS<a class="headerlink" href="#flags" title="此标题的永久链接">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">FLAGS</span><span class="p">(</span><span class="n">section_flags</span><span class="p">)]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>a section is allocatable</p></li>
+<li><p>w section is writable</p></li>
+<li><p>v section contains vle code</p></li>
+<li><p>x section is executable</p></li>
+<li><p>l section is loadable</p></li>
+</ul>
+<section id="id9">
+<h3>方式1<a class="headerlink" href="#id9" title="此标题的永久链接">#</a></h3>
+<p>例子如下:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">CORE_SEC</span><span class="p">(.</span><span class="n">text</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FLAGS</span><span class="p">(</span><span class="n">axl</span><span class="p">)</span>
+<span class="n">CORE_SEC</span><span class="p">(.</span><span class="n">bss</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">NOLOAD</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">FLAGS</span><span class="p">(</span><span class="n">aw</span><span class="p">)</span>
+<span class="n">CORE_SEC</span><span class="p">(.</span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FLAGS</span><span class="p">(</span><span class="n">awl</span><span class="p">)</span>
+<span class="n">CORE_SEC</span><span class="p">(.</span><span class="n">rodata</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">FLAGS</span><span class="p">(</span><span class="n">arl</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>比如说你定义的内存段希望有初始值，那么就需要加上 <code class="docutils literal notranslate"><span class="pre">al</span></code> 标志，并在 __copy_table__ 中将其 VMA 和 LMA 加进去。</p>
+</section>
+<section id="id10">
+<h3>方式2<a class="headerlink" href="#id10" title="此标题的永久链接">#</a></h3>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma section &quot;&lt;name&gt;&quot; [&lt;flags&gt;] [&lt;alignment&gt;]</span>
+<span class="o">&lt;</span><span class="n">objects</span><span class="o">&gt;</span>
+<span class="cp">#pragma section</span>
+
+<span class="cp">#pragma section &quot;.bmhd_0_orig&quot; a</span>
+<span class="cp">#pragma section</span>
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h3>方式3<a class="headerlink" href="#id11" title="此标题的永久链接">#</a></h3>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">__attribute__</span><span class="w"> </span><span class="p">((</span><span class="n">asection</span><span class="p">(</span><span class="s">&quot;&lt;name&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;a=&lt;align&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;f=&lt;flags&gt;&quot;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">免费工具链网址申请链接(1年)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">简介</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">一个简单的例子</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">程序起始点定义</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-bss-data-rodata">text bss data rodata</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#region-alias">REGION_ALIAS 内存段重命名</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">注释的方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">中断向量表</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clear-table-copy-table">__clear_table 和 __copy_table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">获取链接文件中定义值的方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-link">.data段 link文件定义详解</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">设置段的绝对地址</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attr">内存块定义时 attr属性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flags">FLAGS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">方式1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">方式2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">方式3</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/开发板/aurix/Hightec免费工具链_链接脚本学习.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> 显示源代码
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0创建。
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
