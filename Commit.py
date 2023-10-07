@@ -33,3 +33,12 @@ for i in CommitMsgStr:
 system(temp)
 system('git push')
 system('git push --tags')
+
+system('cd build/html')
+system('git add .')
+temp = 'git commit -m'
+temp = temp+' '+'"'+verstr+'"'
+for i in CommitMsgStr:
+    temp = temp+' -m '+'"'+i+'"'
+system(temp)
+system('git push')

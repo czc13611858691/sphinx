@@ -1,3 +1,7 @@
+## v1.0.0
+
+增加github pages
+
 ## v0.2.0
 
 增加github pages
