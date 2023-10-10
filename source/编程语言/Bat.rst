@@ -1,7 +1,7 @@
-Bat命令行
+Bat
 =========
 
-1. robocopy备份
+robocopy备份
 ---------------
 
 `robocopy命令行程序-百度百科 <https://baike.baidu.com/item/robocopy/4883980?fr=aladdin>`__
@@ -17,8 +17,8 @@ Bat命令行
    pause
 
 
-2. 压缩文件
------------
+压缩文件rar bat脚本实现
+---------------------------------
 
 `windows脚本bat做文件备份 <https://www.shuzhiduo.com/A/obzbEMOBdE/>`__
 
@@ -45,3 +45,8 @@ Bat命令行
    echo 删除备份文件...
    rd/s/q %cd%\备份\bakdir
    pause
+
+bat 打开当前文件夹的方法
+------------------------------------------------
+
+``cd %~dp0``
