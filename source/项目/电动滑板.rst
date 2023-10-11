@@ -1,0 +1,8 @@
+电动滑板
+######################################
+
+.. figure:: 电动滑板/2023-10-11-22-32-26.png
+    :align: center
+    :figwidth: 550px
+
+`DIY电动滑板越野爬坡，挑战最大坡度.挑战下vesc控制器 <https://www.bilibili.com/video/BV1LY4y1b7ZF/?spm_id_from=333.337.search-card.all.click&vd_source=b5964dfb66a275d544a7f3638b4ad326>`_ 
