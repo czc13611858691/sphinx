@@ -45,5 +45,3 @@ SimpleFOC入门教程博客:
 https://blog.csdn.net/gjy_skyblue
 
 
-移植stm32
-*********************************************
